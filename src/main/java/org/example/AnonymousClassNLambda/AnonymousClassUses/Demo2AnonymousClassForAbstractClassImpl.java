@@ -1,4 +1,4 @@
-package org.example.AnonymousClassNLambda.ImperativeProgramming;
+package org.example.AnonymousClassNLambda.AnonymousClassUses;
 
 
 abstract class Demo {
