@@ -2,7 +2,7 @@ package org.example.AnonymousClassNLambda.ImperativeProgramming;
 
 import java.util.function.Function;
 
-public class Demo1AnonymousClass {
+public class Demo1AnonymousClassUsingFunctionApproach {
     public static void main(String[] args) {
         Function<String, Integer> f1 = new Function<String, Integer>() {
             @Override
