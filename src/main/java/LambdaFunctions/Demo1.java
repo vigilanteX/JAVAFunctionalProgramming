@@ -34,13 +34,22 @@ class Square implements Shape {
 }
 
 public class Demo1 {
-    public static void main(String[] args)
-    {
-        Shape rectangle=new Rectangle();
+    public static void main(String[] args) {
+//        Shape rectangle=new Rectangle();
+//        rectangle.draw();
+//
+//        Shape square=new Square();
+//        square.draw();
+
+        Shape rectangle = () -> {
+            System.out.println("rectangle drawing");
+        };
         rectangle.draw();
 
-        Shape square=new Square();
+        Shape square = () -> System.out.println("drawing square");
         square.draw();
+
+
 
     }
 }
