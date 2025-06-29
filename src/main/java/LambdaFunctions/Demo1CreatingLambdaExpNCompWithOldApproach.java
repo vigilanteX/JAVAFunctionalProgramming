@@ -33,7 +33,7 @@ class Square implements Shape {
     }
 }
 
-public class Demo1 {
+public class Demo1CreatingLambdaExpNCompWithOldApproach {
     public static void main(String[] args) {
 //        Shape rectangle=new Rectangle();
 //        rectangle.draw();
