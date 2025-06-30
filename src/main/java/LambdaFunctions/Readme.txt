@@ -10,3 +10,18 @@ t.start();
 OR
 Directly pass lambda in Thread class constructor.
 Thread t=new Thread(()->sout("hello world"));
+
+
+
+
+
+
+
+
+
+Comparator
+Accepts object o1 and o2
+compare method has three functions:
+1-If method returns -ive o1 will come first then o2
+2-If method returns +ive o1 comes after o2
+3-If zero then no order change
