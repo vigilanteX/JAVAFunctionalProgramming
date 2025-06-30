@@ -10,19 +10,19 @@ interface Calculator {
 }
 
 public class Demo2CreatingCalculatorAppUsingLambda {
-    public static void main(String[] args)
-    {
-        Calculator sum=(x,y)->x+y;
-        System.out.println(sum.calculate(1,2));
 
-        Calculator subtract=(x,y)->x-y;
-        System.out.println(subtract.calculate(2,1));
+    public static void main(String[] args) {
+        Calculator sum = (x, y) -> x + y;
+        System.out.println(sum.calculate(1, 2));
 
-        Calculator multiply=(x,y)->x*y;
-        System.out.println(multiply.calculate(2,4));
+        Calculator subtract = (x, y) -> x - y;
+        System.out.println(subtract.calculate(2, 1));
 
-        Calculator divide=(x,y)->x/y;
-        System.out.println(divide.calculate(8,2));
+        Calculator multiply = (x, y) -> x * y;
+        System.out.println(multiply.calculate(2, 4));
+
+        Calculator divide = (x, y) -> x / y;
+        System.out.println(divide.calculate(8, 2));
 
 
     }
