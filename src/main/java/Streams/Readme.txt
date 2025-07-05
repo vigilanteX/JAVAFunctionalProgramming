@@ -37,3 +37,16 @@ Terminal Operations List (Commonlu used):
 . findFirst(): Returns the first element in the stream.
 
 . findAny(): Returns any element from the stream (mainly useful in parallel streams).
+
+
+
+### Stream Operations in Java
+
+| **Intermediate Operations**                                                                 | **Terminal Operations**                                                                 |
+|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| They return stream.                                                                         | They return non-stream values.                                                           |
+| They can be chained together to form a pipeline of operations.                              | They can’t be chained together.                                                          |
+| Pipeline of operations may contain any number of intermediate operations.                   | Pipeline of operations can have maximum one terminal operation, that too at the end.     |
+| Intermediate operations are lazily loaded.                                                  | Terminal operations are eagerly loaded.                                                  |
+| They don’t produce end result.                                                              | They produce end result.                                                                 |
+| **Examples:** `filter()`, `map()`, `distinct()`, `sorted()`, `limit()`, `skip()`            | **Examples:** `forEach()`, `toArray()`, `reduce()`, `collect()`, `min()`, `max()`, `count()`, `anyMatch()`, `allMatch()`, `noneMatch()`, `findFirst()`, `findAny()` |
