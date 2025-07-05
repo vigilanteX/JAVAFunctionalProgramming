@@ -42,7 +42,7 @@ Terminal Operations List (Commonlu used):
 
 ### Stream Operations in Java
 
-| **Intermediate Operations**                                                                 | **Terminal Operations**                                                                 |
+| **Intermediate Operations**                                                                 | **Terminal Operations**                                                                  |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | They return stream.                                                                         | They return non-stream values.                                                           |
 | They can be chained together to form a pipeline of operations.                              | They can’t be chained together.                                                          |
