@@ -8,5 +8,6 @@ public class Demo4Array {
         String[] arr={"aman","adarsh","aditya","aditi"};
         Stream<String> s= Arrays.stream(arr);
         s.forEach(x-> System.out.println(x));
+
     }
 }
