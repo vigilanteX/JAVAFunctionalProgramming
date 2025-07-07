@@ -49,7 +49,7 @@ class Customer {
     }
 }
 
-class AgeSorter implements Comparator<Customer> {
+class AgeSorterASC implements Comparator<Customer> {
 
     @Override
     public int compare(Customer o1, Customer o2) {
@@ -57,6 +57,19 @@ class AgeSorter implements Comparator<Customer> {
             return -1;
         } else if (o1.getAge() > o2.getAge()) {
             return 1;
+        } else
+            return 0;
+
+    }
+}
+class AgeSorterDESC implements Comparator<Customer> {
+
+    @Override
+    public int compare(Customer o1, Customer o2) {
+        if (o1.getAge() < o2.getAge()) {
+            return 1;
+        } else if (o1.getAge() > o2.getAge()) {
+            return -1;
         } else
             return 0;
 
@@ -76,8 +89,10 @@ public class Demo3 {
                 new Customer(24, "Ankit", "Singh")
         );
 
-        AgeSorter ageSorter = new AgeSorter();
-        List<Customer> customersSorted = customers.stream().sorted(ageSorter).toList();
+        AgeSorterASC ageSorter = new AgeSorterASC();
+        AgeSorterDESC ageSorterDES = new AgeSorterDESC();
+
+        List<Customer> customersSorted = customers.stream().sorted(ageSorterDES).toList();
         System.out.println(customersSorted);
     }
 }
