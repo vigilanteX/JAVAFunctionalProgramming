@@ -1,4 +1,4 @@
-package Streams.Terminal.ForEach;
+package Streams.Distincts;
 
 import java.util.Arrays;
 import java.util.List;
